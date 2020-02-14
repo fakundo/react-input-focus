@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "publish": "lerna version --conventional-commits && lerna publish from-package --conventional-commits"
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
