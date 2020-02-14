@@ -1,0 +1,40 @@
+{
+  "name": "react-input-focus",
+  "version": "1.1.0",
+  "description": "Focus switcher for React input components",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --progress --open --config webpack.config.development.js",
+    "docs": "webpack --progress --config webpack.config.docs.js",
+    "lint": "eslint src && eslint examples",
+    "clean": "rimraf lib",
+    "compile": "microbundle -i src -o lib/index.js -f cjs --no-sourcemap",
+    "build": "npm run clean && npm run compile && npm run docs",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "keywords": [
+    "react",
+    "focus",
+    "switcher",
+    "manager"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fakundo/react-input-focus"
+  },
+  "author": "Roman Samoylov (https://github.com/fakundo)",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.0.0"
+  }
+}
