@@ -2,7 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "patch": "lerna version patch --force-publish && lerna publish from-package"
+    "publish:patch": "lerna version patch --force-publish && lerna publish from-package",
+    "publish:minor": "lerna version minor --force-publish && lerna publish from-package",
+    "publish:major": "lerna version major --force-publish && lerna publish from-package"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
