@@ -1,7 +1,7 @@
 import findIndex from 'lodash/findIndex'
 import pull from 'lodash/pull'
-import find from 'lodash/find'
 import sortBy from 'lodash/sortBy'
+import find from 'lodash/find'
 
 const createProps = () => {
   let inputs = []
