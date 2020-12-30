@@ -22,9 +22,11 @@ const createProps = () => {
 
   const focusInput = (index) => {
     const { input } = inputs[index] || {}
-    if (input) {
-      setImmediate(() => input.focus())
-    }
+    setTimeout(() => {
+      if (input) {
+        input.focus()
+      }
+    })
   }
 
   const focusNextInput = (key) => {
