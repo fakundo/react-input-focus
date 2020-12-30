@@ -1,6 +1,6 @@
 {
   "name": "preact-input-focus",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Focus switcher for Preact input components",
   "main": "lib/index.js",
   "files": [
