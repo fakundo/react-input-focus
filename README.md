@@ -4,7 +4,7 @@
 
 Focus switcher for React and Preact input components.
 
-## Installation
+### Installation
   
 For React
 ```
@@ -16,13 +16,13 @@ For Preact
 yarn add preact-input-focus
 ```
 
-## Demo
+### Demo
 
 [Demo](https://fakundo.github.io/react-input-focus/react/)
 /
 [Source](https://github.com/fakundo/react-input-focus/tree/master/packages/react-input-focus/examples)
 
-## Usage
+### Usage
 
 ```javascript
 import { FocusableProvider, FocusableInput } from 'react-input-focus' // or from 'preact-input-focus'
@@ -34,7 +34,9 @@ const Input = props => (
         {...props}
         ref={focusableInputRef}
         onKeyPress={(ev) => {
-          if (ev.key === 'Enter') focusNextInput()
+          if (ev.key === 'Enter') {
+            focusNextInput()
+          }
         }}
       />
     ) }
@@ -52,14 +54,14 @@ export default () => (
 )
 ```
 
-## API
+### API
 
 #### `FocusableInput` props
 
-- `children()`
+- `children(focusableValue)`
 - `index` - overrides input index and changes focus order
 
-#### Object that passed to the `FocusableInput` child function
+#### `focusableValue` has the following structure
 
 - `focusableInputRef()`
 - `focusInput(index)`
